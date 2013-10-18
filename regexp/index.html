@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+	<script type="text/javascript" src="http://yandex.st/jquery/1.6.0/jquery.min.js"></script>
 	<!--
 		To apply styles to the certain slides
 		set slide ID to get needed elements
@@ -18,11 +19,11 @@
 			font-size:70px;
 			}
 		#Cover p {
-			margin:10px 0 0;
+			margin:5px 0 0;
 			text-align:center;
 			color:#FFF;
 			font-style:italic;
-			font-size:20px;
+			font-size:18px;
 			}
 		#Cover p a {
 			color:#FFF;
@@ -36,14 +37,20 @@
 			right: 30px;
 		}
 	</style>
+	<script type="text/javascript">
+	$("#but1").one("click",function(){alert($("*").length);})
+	
+</script>
 </head>
 <body class="list">
 	<header class="caption">
-		<h1>Введение в JQuery</h1>
-		<p>Денис Рубцов, Денис Виневцев <a href="https://www.rotapost.ru">Rotapost.Ru</a></p>
+			<h1>Введение в JQuery</h1>
+		<p>Денис Рубцов, Денис Виневцев<a href="https://www.rotapost.ru">Rotapost.Ru</a></p>
+		
 	</header>
 	<section class="slide cover" id="Cover"><div>
 		<h2>Что же такое JQuery</h2>
+		
 		<p>что это?!</p>
 		<img src="pictures/cover.jpg"  alt="">
 	</div></section>
@@ -54,7 +61,9 @@
 	<section class="slide"><div>
 		<h2>Селекторы в JQuery</h2>
 		<p><b>Cелекторы jQuery</b> используются для выбора элементов на странице, чтобы затем вызвать методы jQuery для манипулирования ими.</p>
-		<p>Основные селекторы</p>
+		</div></section>
+	<section class="slide"><div>
+		<p><b>Основные селекторы</b></p>
 		<table class="shaded" style="margin-bottom: 20px;" border="0">
 <tbody>
 <tr>
@@ -87,7 +96,9 @@
 		<div>
 			<h2>Выбор элементов по атрибуту</h2>
 			<p>Иногда нужно выбрать определенный элемент, у которого нет класса или ID, и нет возможности просто добавить класс или ID к данному элементу в разметке. Такая ситуация может сложиться при использовании CMS с фиксированным шаблоном HTML или при работе с контентом, созданным пользователем.</p>		
-			<table class="shaded" style="margin-bottom: 20px;" border="0">
+			</div></section>
+	<section class="slide">
+			<table class="shaded" style="margin: 10px;" border="0">
 <tbody>
 <tr>
 <th>Селектор</th><th>Описание</th><th>Пример</th>
